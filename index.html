@@ -8,35 +8,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
+
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #fef6f6;
             color: #333;
         }
-        
+
         .biodata-card {
     box-shadow: 0 10px 30px -15px rgba(219, 39, 119, 0.2);
     border: 1px solid rgba(219, 39, 119, 0.1);
     transition: all 0.3s ease;
-    padding: 2rem;
-    max-width: 1024px; /* medium width */
-    margin: 0 auto;    /* center on page */
-    width: 100%;       /* full width on small screens */
+    padding: 2rem; /* Add padding inside */
+    max-width: 100%; /* Allow full width inside parent */
 }
 
         }
-        
+
         .biodata-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 35px -10px rgba(219, 39, 119, 0.25);
         }
-        
+
         .section-divider {
             position: relative;
             margin: 2rem 0;
         }
-        
+
         .section-divider:after {
             content: "";
             position: absolute;
@@ -46,43 +44,43 @@
             height: 1px;
             background: linear-gradient(90deg, transparent, rgba(219, 39, 119, 0.5), transparent);
         }
-        
+
         .highlight-box {
             background: linear-gradient(135deg, rgba(251, 207, 232, 0.3), rgba(254, 228, 239, 0.3));
             border-left: 4px solid #db2777;
         }
-        
+
         .floral-decoration {
             position: absolute;
             opacity: 0.1;
             z-index: 0;
         }
-        
+
         .profile-image {
             border: 8px solid white;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .contact-btn {
             background: linear-gradient(135deg, #db2777, #ec4899);
             box-shadow: 0 4px 15px rgba(219, 39, 119, 0.3);
             transition: all 0.3s ease;
         }
-        
+
         .contact-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(219, 39, 119, 0.4);
         }
-        
+
         .modal-overlay {
             background: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(5px);
         }
-        
+
         .heart-beat {
             animation: heartbeat 1.5s ease-in-out infinite;
         }
-        
+
         @keyframes heartbeat {
             0% { transform: scale(1); }
             25% { transform: scale(1.1); }
@@ -90,11 +88,11 @@
             75% { transform: scale(1.1); }
             100% { transform: scale(1); }
         }
-        
+
         .floating-btn {
             animation: float 3s ease-in-out infinite;
         }
-        
+
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
@@ -107,7 +105,8 @@
     <div class="floral-decoration top-0 left-0">
         <i class="fas fa-leaf text-6xl text-pink-300 transform rotate-45"></i>
     </div>
-    <div class="biodata-card bg-white rounded-lg overflow-hidden mb-12 w-full h-full">
+    <div class="max-w-7xl mx-auto relative z-10 px-4">
+
 
 
         <!-- Header -->
@@ -115,7 +114,7 @@
             <h1 class="text-4xl font-bold text-pink-800 mb-4">Biodata</h1>
             <div class="w-32 h-1 bg-gradient-to-r from-pink-300 via-pink-500 to-pink-300 mx-auto rounded-full"></div>
         </div>
-        
+
         <!-- Main Biodata Card -->
         <div class="biodata-card bg-white rounded-lg overflow-hidden mb-12">
             <!-- Profile Header -->
@@ -125,10 +124,10 @@
                          alt="Darshana Chandera" class="w-full h-full object-cover">
                 </div>
                 <h2 class="text-5xl font-bold text-pink-900">Darshana Chandera</h2>
-                
-               
+
+
             </div>
-            
+
             <!-- Biodata Content -->
             <div class="p-8">
                 <!-- Basic Information -->
@@ -139,7 +138,7 @@
                         </span>
                         Basic Information
                     </h3>
-                    
+
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <!-- Row 1 -->
     <!-- Column 1: Date of Birth -->
@@ -203,10 +202,10 @@
 </div>
 
 
-                
+
                 <div class="section-divider"></div>
-                
-        
+
+
                 <!-- Education -->
                 <div class="mb-8">
                     <h3 class="text-2xl font-semibold text-pink-800 mb-4 flex items-center">
@@ -215,7 +214,7 @@
                         </span>
                         Education
                     </h3>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="flex items-start">
                             <div class="bg-pink-100 p-2 rounded-lg mr-4">
@@ -226,7 +225,7 @@
                                 <p class="text-gray-600">Jawahar Navoday Vidhyalay (Kodinar)</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-pink-100 p-2 rounded-lg mr-4">
                                 <i class="fas fa-university text-pink-600"></i>
@@ -238,9 +237,9 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="section-divider"></div>
-                
+
                 <!-- Family Details -->
                 <div class="mb-8">
                     <h3 class="text-2xl font-semibold text-pink-800 mb-4 flex items-center">
@@ -249,7 +248,7 @@
                         </span>
                         Family Details
                     </h3>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="flex items-start">
                             <div class="bg-pink-100 p-2 rounded-lg mr-4">
@@ -261,7 +260,7 @@
                                 <p class="text-sm text-gray-500">Government Teacher</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-pink-100 p-2 rounded-lg mr-4">
                                 <i class="fas fa-female text-pink-600"></i>
@@ -274,9 +273,9 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="section-divider"></div>
-                
+
                 <!-- Contact Information -->
                 <div class="mb-8">
                     <h3 class="text-2xl font-semibold text-pink-800 mb-4 flex items-center">
@@ -285,7 +284,7 @@
                         </span>
                         Contact Information
                     </h3>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="flex items-start">
                             <div class="bg-pink-100 p-2 rounded-lg mr-4">
@@ -296,7 +295,7 @@
                                 <p class="text-gray-600">Morvad, Kodinar, Somnath</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-pink-100 p-2 rounded-lg mr-4">
                                 <i class="fas fa-phone-alt text-pink-600"></i>
@@ -306,7 +305,7 @@
                                 <p class="text-gray-600">6351971951</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-pink-100 p-2 rounded-lg mr-4">
                                 <i class="fas fa-envelope text-pink-600"></i>
@@ -318,9 +317,9 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="section-divider"></div>
-                
+
                 <!-- Partner Expectation -->
                 <div>
                     <h3 class="text-2xl font-semibold text-pink-800 mb-4 flex items-center">
@@ -329,7 +328,7 @@
                         </span>
                         Expectation
                     </h3>
-                    
+
                     <div class="highlight-box p-6 rounded-lg">
                         <div class="flex items-start">
                             <div class="mr-4">
@@ -347,7 +346,7 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         // Simple script for the contact button
         document.getElementById('contactBtn').addEventListener('click', function() {
